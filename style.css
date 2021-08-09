@@ -1,0 +1,57 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.board {
+  position: absolute;
+  width: 560px;
+  height: 480px;
+
+  background-color: blanchedalmond;
+}
+
+.ball-position-container {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ball-position {
+  background-color: white;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+
+.ball {
+  position: absolute;
+  
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+
+  transition: top 2s;
+
+  z-index: 2;
+}
+
+.red {
+  background-color: red;
+}
+
+.orange {
+  background-color: orange;
+}

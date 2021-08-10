@@ -1,5 +1,5 @@
 import Grid from './grid.js';
-import Ball from './Ball.js';
+import Ball from './ball.js';
 import ControlBar from './controlBar.js';
 import TopBar from './topBar.js';
 

@@ -1,10 +1,12 @@
 body {
   padding: 0;
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 main {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100vw;
@@ -13,7 +15,7 @@ main {
 }
 
 .board {
-  position: absolute;
+  position: relative;
   width: 560px;
   height: 480px;
 
@@ -30,6 +32,7 @@ main {
 }
 
 .ball-position {
+  position: relative;
   background-color: white;
   border-radius: 50%;
   width: 70px;
@@ -42,8 +45,10 @@ main {
   border-radius: 50%;
   width: 70px;
   height: 70px;
+  top: -600px;
+  opacity: 0;
 
-  transition: top 2s;
+  transition: top 0.5s, opacity 1s;
 
   z-index: 2;
 }
@@ -54,4 +59,46 @@ main {
 
 .orange {
   background-color: orange;
+}
+
+#controlBar {
+  width: 560px;
+  height: 40px;
+  margin-top: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.playerIndex {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+#restartButton {
+  border: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: medium;
+  visibility: hidden;
+}
+
+#topBar {
+  width: 560px;
+  height: 40px;
+  background-color: cadetblue;
+  margin-bottom: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 10px 10px 0 0;
 }

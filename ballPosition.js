@@ -19,8 +19,6 @@ class BallPosition {
 
     document.getElementById('board').appendChild(this.container);
 
-    this.hasBall = false;
-
     this.player = 0;
   }
 }

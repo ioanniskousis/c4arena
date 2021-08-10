@@ -14,6 +14,14 @@ class Grid {
       }
     }
   }
+
+  restart() {
+    for (let r = 0; r < this.ballPositions.length; r++) {
+      for (let c = 0; c < this.ballPositions[r].length; c++) {
+        this.ballPositions[r][c].player = 0;
+      }
+    }
+  }
 }
 
 export default Grid;

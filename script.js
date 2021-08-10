@@ -13,17 +13,18 @@ window.addEventListener('load', () => {
     const ballPosition = allBallPositions[i];
     ballPosition.addEventListener('click', (e) => {
       const column = e.currentTarget.getAttribute('column');
-      createNewBall(column);
-      player = player === 1 ? 2 : 1;
+      createNewBall(player, column);
+      player = (player === 1 ? 2 : 1);
     })
   }
 
 });
 
 
-function createNewBall(column) {
+function createNewBall(player, column) {
+  
   const ball = new Ball(player, column);
-  const row = -1;
+  let row = -1;
 
   for (let r = 5; r > -1; r--) {
     const bp = grid.ballPositions[r][column];
@@ -43,6 +44,6 @@ function createNewBall(column) {
   
 }
 
-function checkWinner(player, r, c) {
-  
+function checkWinner(player, row, column) {
+
 }

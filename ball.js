@@ -6,6 +6,8 @@ class Ball {
     this.element.className = 'ball ' + (player === 1 ? 'red' : 'orange');
 
     document.body.appendChild(this.element);
+
+    this.player = 0;
   }
 }
 

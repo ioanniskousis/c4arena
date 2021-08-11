@@ -14,12 +14,27 @@ main {
   position: relative;
 }
 
+#svgLayer {
+  position: absolute;
+  width: 560px;
+  height: 480px;
+  z-index: 3;
+  visibility: hidden;
+}
+
+.winLine {
+  stroke: black;
+  stroke-width: 5;
+  box-shadow: 0 0 5px 5px rgba(30, 30, 30, 0.5);
+}
+
 .board {
   position: relative;
   width: 560px;
   height: 480px;
 
   background-color: blanchedalmond;
+  border-radius: 0 0 10px 10px;
 }
 
 .ball-position-container {
@@ -64,7 +79,7 @@ main {
 #controlBar {
   width: 560px;
   height: 40px;
-  margin-top: 4px;
+  margin-top: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -78,10 +93,10 @@ main {
 
 #restartButton {
   border: none;
-  background-color: red;
+  background-color: black;
   color: white;
   cursor: pointer;
-  padding: 10px 20px;
+  padding: 10px 50px;
   border-radius: 4px;
   font-size: medium;
   visibility: hidden;

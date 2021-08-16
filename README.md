@@ -13,12 +13,12 @@ The project was assigned to me as a challenge during an interview process, to bu
 It is played by 2 players.  
 Each player drops balls on a column of their choise trying to setup structures of at least 4 balls in a row, column, or diagonal.
 
-Messages are shown at the top-bar on edge cases and palyers are swapt on game over.
+Messages are shown at the top-bar on edge cases and players are swapt on game over.
 
 ## Technologies used
 
 - HTML5 was used to setup the basic interface skeleton with minimum containers.
-- Javascript (ES6) was used to create all the active alements on the load of the page and manage the game logic.
+- Javascript (ES6) was used to create all the active elements on the load of the page and manage the game logic.
 - CSS3 styled the elements
 - SVG was used to mark the winning lines
 
